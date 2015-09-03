@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Neta's Name:</strong>
+  <%= @winner.amount %>
+</p>
+
+<p>
+  <strong>Votes Won:</strong>
+  <%= @winner.vote %>
+</p>
+
+<%= link_to 'Edit', edit_winner_path(@winner) %> |
+<%= link_to 'Back', winners_path %>

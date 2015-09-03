@@ -1,0 +1,7 @@
+<ul>
+	<% @winners.each do |winner| %>
+	<li> <%= winner.name %> <%= winner.vote %></li>
+	<% end %>
+</ul>
+Winner :<%= @current_winner.name %> <br>
+Won by :<%= @vote_diff %> VOTES

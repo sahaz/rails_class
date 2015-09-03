@@ -1,0 +1,23 @@
+<table border=1 >
+  <thead>
+    <tr>
+      <th>Neta Jiu ko Nam</th>
+      <th>Total Votes</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<% @winners.each do |winner| %>
+   
+      <tr>
+        <td><%= winner.name %></td>
+        <td><%= winner.vote %></td>
+        <td><%= link_to 'Show', winner %></td>
+   
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
